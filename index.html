@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Clase 11</title>
+
+    <link type="text/css" rel="stylesheet" href="styloform.css">
+    <script src="validacion.js"></script>
+</head>
+<body>
+    <h1>Completa el formulario para suscribirte.</h1>
+
+    <form id="formu">
+        <h2>formulario</h2>
+         <div  class="contentform">
+             <div class="col1">
+            <label for="name"> <p>Nombre:</p> </label>
+            <input type="text" id="name" name="user_name" placeholder="Ingrese su Nombre" required class="input">
+            <p id="nameError" class="hiddenError">Minimo 3 letras</p>
+            
+            <label for="apellido"> <p>Apellido:</p></label>
+            <input type="text" id="ape" name="last_name" placeholder="Ingrese su Apellido" required class="input">
+            <p id="apeError" class="hiddenError">Minimo 3 letras</p>
+
+            <label for="direccion"> <p>Direccion:</p></label>
+            <input type="text" id="dire" name="dir" placeholder="Ingrese su Direccion" required class="input"> 
+            <p id="direError" class="hiddenError">Dirección incorrecta</p>
+            </div>
+
+            <div class="col2">
+
+            <label for="Tel"> <p>Telefono:</p></label>
+            <input type="tel" id="tel" name="tel" placeholder="Ingrese su Telefono" required class="input"> 
+            <p id="telError" class="hiddenError">Telefono incorrecto</p>
+      
+            <label for="mail"> <p>e-Mail:</p></label>
+            <input type="email" id="mail" name="mail" placeholder="Ingrese su Mail" required class="input">
+            <p id="mailError" class="hiddenError">Mail incorrecto</p> 
+
+            <label for="pass"> <p>Contraseña:</p></label>
+            <input type="password" id="pass" name="password" placeholder="Ingrese su Contraseña" required class="input">
+            <p id="passError" class="hiddenError">Contraseña incorrecto</p>
+            </div>
+      
+            
+       
+    </div>  
+    <button id="btn">Enviar</button> 
+    </form>
+
+    <div id="modal_ok" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Registro exitoso</p>
+            <p id="textoModal">Resultado</p>
+        </div>
+    </div>
+
+</body>
+</html>
