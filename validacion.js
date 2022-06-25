@@ -204,14 +204,14 @@ btnEnviar.addEventListener("click", verifValid);
         validateTelefono();
         validateMail();
         validatePass();
-        if (regOk == 7) {
+        if (regOk == 6) {
             enviaDatos();
         }
     }
 
     function enviaDatos () {
         link = "https://curso-dev-2021.herokuapp.com/newsletter?";
-        param = "&name=" + nombre.value + "&surname=" + apellido.value + "&adress=" + direccion.value + "tel=" + telefono.value + "&email=" + mail.value + "&pass=" + password.value;
+        param = "&name=" + nombre.value + "&surname=" + apellido.value + "&adress=" + direccion.value + "&tel=" + telefono.value + "&email=" + mail.value + "&pass=" + password.value;
         finalParam = link + param;
 
         fetch (finalParam)
