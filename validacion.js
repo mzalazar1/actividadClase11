@@ -211,7 +211,7 @@ btnEnviar.addEventListener("click", verifValid);
 
     function enviaDatos () {
         link = "https://curso-dev-2021.herokuapp.com/newsletter?";
-        param = "&name=" + nombre.value + "&surname=" + apellido.value + "&adress=" + direccion.value + "&tel=" + telefono.value + "&email=" + mail.value + "&pass=" + password.value;
+        param = "&name=" + nombre.value + "&surname=" + apellido.value + "&adress=" + domicilio.value + "&tel=" + telefono.value + "&email=" + mail.value + "&pass=" + password.value;
         finalParam = link + param;
 
         fetch (finalParam)
